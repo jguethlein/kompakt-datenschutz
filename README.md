@@ -2,12 +2,12 @@
 
 Statische Seite (`index.html`), Entwurf, kein Rechtsrat.
 
-## Vor der Veröffentlichung
-1. In `index.html` `{{PROTON_EMAIL}}` und `{{ADRESSE}}` ersetzen (`grep -n '{{' index.html`).
-2. Ein Impressum mit ladungsfähiger Anschrift ist bei öffentlicher Seite Pflicht (§ 5 DDG); Entwurf: `Gedächtnis/referenz/tennis/rechtstexte/impressum.md`.
+Seiten: `index.html` (Datenschutz), `impressum.html` (§ 5 DDG), unten gegenseitig verlinkt.
 
-## Auf GitHub Pages
-1. Auf github.com neues **öffentliches** Repo anlegen, z. B. `kompakt-datenschutz`.
-2. `git remote add origin git@github.com:<name>/kompakt-datenschutz.git && git push -u origin main`
-3. Repo → Settings → Pages → Source: Branch `main`, Ordner `/ (root)` → Save.
-4. URL: `https://<name>.github.io/kompakt-datenschutz/` – diese in App Store Connect als Datenschutz-URL eintragen.
+## Veröffentlichen
+`bash veroeffentlichen.sh` gibt die Schritte für GitHub Pages aus (Konto `jguethlein`).
+Datenschutz-URL für App Store Connect: https://jguethlein.github.io/kompakt-datenschutz/
+Impressum: https://jguethlein.github.io/kompakt-datenschutz/impressum.html
+
+Das Skript legt kein Repo an und pusht nicht. Adresse und E-Mail stehen seit
+02.10.2026 fest in den Seiten; eine USt-Zeile gibt es nicht (keine USt-IdNr.).
