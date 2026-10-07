@@ -20,22 +20,23 @@
 <body>
 <main>
 <h1>Datenschutzerklärung für „Kompakt Rechnung“</h1>
-<p class="stand">Stand: 6. Oktober 2026</p>
+<p class="stand">Stand: 7. Oktober 2026</p>
 
-<div class="kurz"><strong>Kurzfassung:</strong> Was du einträgst – Schüler, Stunden, Beträge –, liegt auf deinem iPhone. Bei neuen Testkonten bleibt es dort. Bei bestehenden Testkonten (z. B. „kom1“) gleicht die App die Daten zusätzlich mit meinem Server ab; dann liegt dort eine Kopie, und ich bin dafür Auftragsverarbeiter (Abschnitt 6). Für die Testversion brauchst du ein Konto (Abschnitt 6). Kein Tracking, keine Analytik, keine Werbung. Die App liest deinen Kalender, um Trainerstunden zu erkennen; auch das bleibt auf deinem Gerät.</div>
+<div class="kurz"><strong>Kurzfassung:</strong> Die Anmeldung ist Pflicht, aber nur als Zugangsprüfung: Die App fragt meinen Server, ob dein Konto aktiv ist (höchstens einmal pro Stunde; offline läuft sie bis zu 14 Tage weiter). Danach wählst du, wo deine Daten liegen. <strong>„Nur auf diesem Gerät“</strong> (Standard): Schüler, Stunden, Beträge verlassen dein Gerät nicht; zum Server geht nur die Zugangsprüfung. <strong>„Abgleich mit Server“</strong> (nur auf Einladung, freiwillig, jederzeit umstellbar): Dann liegen Schüler, Stunden, Beträge und Rechnungen zusätzlich auf meinem Server, und ich bin dafür Auftragsverarbeiter (Abschnitte 5 und 6). Rechnungen gibt es nur mit Abgleich. Zusätzlich gibt es eine Web-Version im Browser (Abschnitt 13). Kein Tracking, keine Analytik, keine Werbung. Die App liest deinen Kalender, um Trainerstunden zu erkennen; auch das bleibt auf deinem Gerät.</div>
 
 <h2>1. Verantwortlicher für diese Seite und die App</h2>
 <p>Jakob Güthlein<br>Föhrenweg 27<br>91091 Großenseebach<br>E-Mail: <a href="mailto:tennis-guethlein@proton.me">tennis-guethlein@proton.me</a></p>
 
 <h2>2. Welche Daten die App verarbeitet</h2>
-<p>Kompakt speichert ausschließlich auf deinem Gerät, in einer eigenen Datei:</p>
+<p>Kompakt speichert deine Daten auf deinem Gerät, in einer eigenen Datei:</p>
 <ul>
 <li>Schüler und Schulen: Name, optional Kontaktangabe oder Notiz</li>
 <li>Trainingsorte mit Stundensatz</li>
 <li>Stunden: Datum, Uhrzeit, Dauer, Teilnehmer, Status (stattgefunden/ausgefallen)</li>
 <li>Zahlungsstatus je Schüler oder Schule</li>
+<li>Rechnungen (nur mit Abgleich, siehe Abschnitt 6)</li>
 </ul>
-<p>Diese Daten bleiben auf deinem Gerät. Nur wenn für dein Konto der Abgleich aktiv ist (Abschnitt 6), werden sie zusätzlich auf meinen Server übertragen. An Dritte gebe ich sie nie weiter.</p>
+<p>Diese Daten bleiben auf deinem Gerät, solange du „Nur auf diesem Gerät“ gewählt hast. Nur wenn du „Abgleich mit Server“ wählst (Abschnitt 6), werden sie zusätzlich auf meinen Server übertragen. An Dritte gebe ich sie nie weiter.</p>
 <p><strong>Löschen:</strong> Löschst du in der App einen Schüler, eine Schule oder einen Ort, ist er auf deinem Gerät weg. Bei aktivem Abgleich wird die Löschung beim nächsten Abgleich an den Server gemeldet; dort bleibt nur eine Löschmarkierung (interne Kennung und Zeitpunkt, kein Name und keine Angaben), damit auch deine anderen Geräte die Löschung übernehmen. Bereits erstellte Rechnungen bleiben nach dem Löschen eines Schülers gespeichert (Aufbewahrungspflicht nach § 147 AO und § 14b UStG) und sind nur in deinem eigenen Konto sichtbar.</p>
 
 <h2>3. Kalenderzugriff</h2>
@@ -51,19 +52,22 @@
 <p>Die App legt Sicherungen der eigenen Datei an. Den Ablageort (z. B. iCloud Drive, Gerät oder ein anderer Ordner) wählst du selbst. Die App sendet die Datei an niemanden. Wählst du iCloud Drive, gelten dafür die Bedingungen von Apple: <a href="https://www.apple.com/de/legal/privacy/">apple.com/de/legal/privacy</a></p>
 
 <h2>5. Wer ist verantwortlich für die Schülerdaten?</h2>
-<p>Für die Daten deiner Schüler bist <strong>du</strong> der Verantwortliche im Sinne von Art. 4 Nr. 7 DSGVO. Ohne Abgleich bin ich dafür weder Verantwortlicher noch Auftragsverarbeiter, weil die Daten nie an mich gehen. Bei Konten mit Abgleich speichere ich sie in deinem Auftrag auf meinem Server und bin insoweit Auftragsverarbeiter; den Vertrag nach Art. 28 DSGVO schließen wir für diese Konten vor der Nutzung bzw. umgehend.</p>
+<p>Für die Daten deiner Schüler bist <strong>du</strong> der Verantwortliche im Sinne von Art. 4 Nr. 7 DSGVO. Bei „Nur auf diesem Gerät“ bin ich dafür weder Verantwortlicher noch Auftragsverarbeiter, weil die Daten nie an mich gehen. Wählst du „Abgleich mit Server“, speichere ich sie in deinem Auftrag auf meinem Server und bin insoweit Auftragsverarbeiter. Den Vertrag nach Art. 28 DSGVO (AV-Vertrag) nimmst du dafür vor der Nutzung des Abgleichs an.</p>
+<!-- OFFEN: Im Code (SwiftUI/ und Web/) habe ich keinen Dialog oder kein Häkchen zur Annahme des AV-Vertrags gefunden, nur die Wahl-Karte „Abgleich mit Server“. Entweder liegt das Häkchen in einem noch nicht eingecheckten Stand, oder der Satz oben ist (noch) Plan. Vor Veröffentlichung klären. -->
 
-<h2>6. Dein Konto für die Testversion</h2>
-<p>Die Testversion nutzen nur eingeladene Trainer. Dafür lege ich dir ein Konto an; die App fragt bei der Anmeldung, beim Start und danach höchstens einmal pro Stunde meinen Server, ob das Konto gültig ist. Ohne Netz läuft die App bis zu 14 Tage weiter.</p>
+<h2>6. Dein Konto und der Speicherort</h2>
+<p>Die Testversion nutzen nur eingeladene Trainer. Dafür lege ich dir ein Konto an. Die Anmeldung ist Pflicht, damit ich Zugang und Abo kontrollieren kann. Dazu fragt die App bei der Anmeldung, beim Start und danach höchstens einmal pro Stunde meinen Server, ob das Konto aktiv ist. Ohne Netz läuft die App bis zu 14 Tage nach der letzten erfolgreichen Prüfung weiter; danach kannst du deine Daten nur noch ansehen und sichern, bis wieder geprüft wurde. Nach der Anmeldung wählst du den Speicherort. Du kannst ihn später in den Einstellungen umstellen.</p>
 <ul>
 <li><strong>Gespeichert</strong> auf dem Server: dein Benutzername, dein Passwort nur als Hash, je Anmeldung ein Sitzungsschlüssel (nur als Hash) mit dem <strong>Zeitpunkt der Anmeldung</strong> und die Zahl fehlgeschlagener Anmeldeversuche (wird bei der nächsten richtigen Anmeldung gelöscht).</li>
 <li>Die regelmäßige Prüfung beim Start <strong>hinterlässt keinen Eintrag</strong>.</li>
 <li>Bei falschen Passwörtern merkt sich der Server die IP-Adresse 10 Minuten lang nur im Arbeitsspeicher, um Raten zu bremsen.</li>
-<li><strong>Letzte Synchronisation:</strong> Bei jedem Abgleich trägt der Server in einer Tabelle („aktivitaet“) deinen Kontonamen und den Zeitpunkt des letzten Abgleichs ein (nur der jeweils letzte, er wird überschrieben).</li>
-<li><strong>Abgleich nur bei bestehenden Konten:</strong> Neue Testkonten starten ohne Abgleich; es werden keine Schüler, Stunden oder Beträge hochgeladen. Bei bestehenden Konten (z. B. „kom1“) ist der Abgleich aktiv: Schüler, Schulen, Orte, Stunden, Zahlungen, Rechnungen und Einstellungen (nicht deine Kalendertermine) werden mit dem Server abgeglichen, damit mehrere Geräte denselben Stand haben. Dort liegt dann eine Kopie deiner Schülerdaten; sie wird zusammen mit dem Konto gelöscht.</li>
-<li><strong>Speicherdauer:</strong> bis dein Konto gelöscht wird. Das kannst du jederzeit selbst in der App unter <em>Einstellungen → Sicherung &amp; Gerät → Konto → Konto löschen</em> (mit deinem Passwort) oder per E-Mail an mich. Konto und alle Einträge dazu, auch abgeglichene Daten und der Eintrag zur letzten Synchronisation, sind dann sofort und ohne Kopie weg. Festgehalten wird nur der Zeitpunkt der Löschung, ohne Namen. Die Daten auf deinem iPhone bleiben.</li>
+<li><strong>Letzte Synchronisation</strong> (nur mit Abgleich): Bei jedem Abgleich trägt der Server in einer Tabelle („aktivitaet“) deinen Kontonamen und den Zeitpunkt des letzten Abgleichs ein (nur der jeweils letzte, er wird überschrieben).</li>
+<li><strong>„Nur auf diesem Gerät“ (Standard):</strong> Zum Server geht nur die Zugangsprüfung, also dein Benutzername mit Anmeldung und die Abfrage, ob das Konto aktiv ist. Es werden keine Schüler, Stunden, Beträge oder Rechnungen übertragen. Rechnungen gibt es in diesem Modus nicht.</li>
+<li><strong>„Abgleich mit Server“ (auf Einladung, freiwillig):</strong> Der Abgleich ist nur wählbar, wenn ich ihn für dein Konto freigeschaltet habe, und nur, wenn du ihn selbst wählst. Dann werden Schüler, Schulen, Orte, Stunden, Zahlungen, Rechnungen und Einstellungen (nicht deine Kalendertermine) mit dem Server abgeglichen, damit mehrere Geräte denselben Stand haben. Auch die Rechnungsnummern vergibt der Server. Dort liegt dann eine Kopie deiner Schülerdaten, für die ich Auftragsverarbeiter bin (Abschnitt 5). Stellst du wieder auf „Nur auf diesem Gerät“ um, bleiben deine Daten auf dem Gerät.</li>
+<!-- OFFEN: Ob und wann die Kopie auf dem Server gelöscht wird, wenn du den Abgleich beendest (ohne das Konto zu löschen), steht nicht im App-Code (Server-Verhalten). Bitte prüfen und hier ergänzen. -->
+<li><strong>Speicherdauer:</strong> bis dein Konto gelöscht wird. Das kannst du jederzeit selbst in der App unter <em>Einstellungen → Sicherung &amp; Gerät → Konto → Konto löschen</em> (mit deinem Passwort) oder per E-Mail an mich. Der Server löscht dabei Konto und Abgleich-Datenbank endgültig; alle Einträge dazu, auch abgeglichene Daten und der Eintrag zur letzten Synchronisation, sind dann sofort und ohne Kopie weg. Festgehalten wird nur der Zeitpunkt der Löschung, ohne Namen. Die Daten auf deinem iPhone bleiben.</li>
 <li><strong>Wo:</strong> auf meinem eigenen Rechner in Deutschland. Die verschlüsselte Verbindung dorthin leitet Tailscale Inc. (Kanada) weiter; Tailscale kann den Inhalt nicht lesen, sieht aber deine IP-Adresse. Für Kanada gilt ein Angemessenheitsbeschluss der EU-Kommission. Für diese Weiterleitung (Tailscale Funnel) ist Tailscale als Auftragsverarbeiter eingebunden, mit einem Vertrag nach Art. 28 DSGVO samt EU-Standardvertragsklauseln.</li>
-<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (deine Teilnahme am Test).</li>
+<li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (deine Teilnahme am Test, Zugangsprüfung). Für abgeglichene Schülerdaten verarbeite ich in deinem Auftrag (Art. 28 DSGVO).</li>
 </ul>
 
 <h2>7. Keine Weitergabe, keine Analytik, keine Werbung</h2>
@@ -82,13 +86,17 @@
 <p>Schüler eines Tennistrainers sind oft minderjährig. Kompakt erfasst bewusst keine Geburtsdaten, kein Geschlecht, keine Gesundheitsangaben, keine Fotos und keine Bankdaten der Schüler. Als Verantwortlicher holst du die Einwilligung der Erziehungsberechtigten ein, soweit die Verarbeitung nicht ohnehin zur Vertragserfüllung erforderlich ist.</p>
 
 <h2>10. Deine Rechte</h2>
-<p>Zu deinen Kontodaten (Abschnitt 6) hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit (Art. 15–20 DSGVO). Schüler- und Stundendaten liegen auf deinem Gerät, bei Konten mit Abgleich zusätzlich auf meinem Server; für diese Kopie gelten dieselben Rechte. Anfragen und Fragen an <a href="mailto:tennis-guethlein@proton.me">tennis-guethlein@proton.me</a>. Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren, etwa beim Landesamt deines Bundeslandes.</p>
+<p>Zu deinen Kontodaten (Abschnitt 6) hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit (Art. 15–20 DSGVO). Schüler- und Stundendaten liegen auf deinem Gerät, mit „Abgleich mit Server“ zusätzlich auf meinem Server; für diese Kopie gelten dieselben Rechte, wobei du als Verantwortlicher gegenüber deinen Schülern auskunftspflichtig bist. Anfragen und Fragen an <a href="mailto:tennis-guethlein@proton.me">tennis-guethlein@proton.me</a>. Du hast das Recht, dich bei einer Datenschutzaufsichtsbehörde zu beschweren, etwa beim Landesamt deines Bundeslandes.</p>
 
 <h2>11. Änderungen</h2>
-<p>Bei Änderungen, insbesondere wenn der Abgleich für weitere Konten aktiviert wird, wird diese Erklärung angepasst und du wirst in der App informiert, bevor eine solche Funktion aktiv wird.</p>
+<p>Bei Änderungen, insbesondere wenn sich ändert, welche Daten an den Server gehen, wird diese Erklärung angepasst.</p>
 
 <h2>12. Diese Webseite</h2>
 <p>Diese Seite liegt bei GitHub Pages (GitHub Inc., USA). Beim Aufruf verarbeitet GitHub technisch nötige Daten wie deine IP-Adresse, um die Seite auszuliefern und vor Missbrauch zu schützen (Art. 6 Abs. 1 lit. f DSGVO). Dabei können Daten in die USA übermittelt werden; GitHub ist unter dem EU-US Data Privacy Framework zertifiziert. Ich selbst werte keine Zugriffe aus. Mehr: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>.</p>
+
+<h2>13. Web-Version im Browser</h2>
+<p>Zusätzlich gibt es Kompakt als Web-Version im Browser (z. B. für Android). Die Anmeldung, die Zugangsprüfung und die Wahl des Speicherorts funktionieren wie in der App. Bei „Nur auf diesem Gerät“ liegen deine Daten im Browser-Speicher (IndexedDB) deines Geräts; sie gehen nur an den Server, wenn du den Abgleich wählst. Dein Anmelde-Schlüssel und Einstellungen liegen im lokalen Speicher des Browsers (localStorage); das Passwort wird nicht gespeichert. Löschst du die Browserdaten, sind die Daten der Web-Version weg, sofern du sie nicht gesichert oder abgeglichen hast. Die Web-Version bietet eine Sicherung als Datei zum Herunterladen.</p>
+<!-- OFFEN: Eine Funktion „Konto löschen“ habe ich in Web/js nicht gefunden (nur in der iOS-App). Konto-Löschung für Web-Nutzer läuft bisher nur per E-Mail an mich. Außerdem: Wo die Web-Version ausgeliefert wird (Hoster), steht nicht im Code, ein Abschnitt dazu fehlt deshalb. -->
 
 <nav><a href="index.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></nav>
 </main>
